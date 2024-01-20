@@ -6,128 +6,158 @@
     <link href="./style.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
     <title>Afthab</title>
-    <script src="./" type="module" defer></script>
+    <script src="/main.js" type="module" defer></script>
   </head>
-  <body
-    class="w-full translate-y-6 bg-gradient-to-r from-orange-700 from-0% via-orange-500 via-80% to-orange-300 text-white2"
-  >
+  <body class="w-full bg-[#4faaab] text-white">
     <div
-      class="w-[95%] -skew-y-[4deg] -translate-y-4 translate-x-4 m-auto shadow-[40px_60px_100px_#454545,-10px_-8px_10px_0px_#ea580c80] border-2 border-l-4 border-orange-600 px-10 pt-20 lg:px-40 rounded-[70px] bg-gradient-to-r from-orange-700 to-red-600"
+      class="mx-10 mt-12 mb-32 border-4 border-white px-10 pt-20 lg:px-40 rounded-[70px] bg-darkOrange"
     >
-      <audio id="player" autoplay>
-        <!-- TODO -->
-        <source src="./src/audio/" type="audio/mpeg" />
-      </audio>
-
+      <audio
+        id="player"
+        src="/audio/radio_tuning.mp3"
+        type="audio/mpeg"
+        loop
+        muted
+      ></audio>
       <header
-        class="flex justify-between items-center font-grandezza font-extralight fixed gap-8 min-w-full left-0 px-8 lg:px-40"
+        class="flex justify-between items-center font-grandezza font-extralight gap-8 min-w-full left-0"
       >
-        <span class="flex text-2xl flex-col">
+        <span class="flex gap-2 text-4xl flex-col">
           <p>TUNE</p>
           <button id="tune" type="button" title="tune">
             <div
-              class="shadow-[5px_5px_10px_2px_#882906,-5px_-5px_8px_2px_#cf2c13] border-t-[5px] border-l-[7px] -skew-y-[4deg] m-auto h-20 w-20 border-[1px] border-slate-600 rounded-full grad"
+              class="shadow-[10px_10px_#1b1b1b,-7px_-6px_#7a2408] border-8 -skew-y-[4deg] m-auto h-28 w-28 border-white rounded-full bg-slate-500"
             ></div>
           </button>
         </span>
-        <nav class="flex text-[1rem] gap-10">
-          <span class="flex flex-col">
-            <p>VOL&nbsp;<span class="text-[1.5rem]">+</span></p>
+        <nav class="flex text-2xl gap-10">
+          <span class="flex gap-1 flex-col">
+            <p>VOL&nbsp;<span class="text-[1.75rem]">+</span></p>
             <button id="volUp" type="button" title="volume +">
               <div
-                class="shadow-[3px_3px_10px_2px_#800600,-3px_-3px_8px_2px_#c11a00] border-t-2 border-l-4 -skew-y-[4deg] m-auto h-12 w-12 border-[1px] border-slate-600 rounded-full grad"
+                class="shadow-[6px_6px_#1b1b1b,-4px_-3px_#7a2408] border-4 -skew-y-[4deg] m-auto h-16 w-16 border-white rounded-full bg-slate-500"
               ></div>
             </button>
           </span>
-          <span class="flex flex-col">
-            <p>VOL&nbsp;<span class="text-[1.5rem]">-</span></p>
+          <span class="flex gap-1 flex-col">
+            <p>VOL&nbsp;<span class="text-[1.75rem]">-</span></p>
             <button id="volDown" type="button" title="volume -">
               <div
-                class="shadow-[3px_3px_10px_2px_#800600,-3px_-3px_8px_2px_#c11a00] border-t-2 border-l-4 -skew-y-[4deg] m-auto h-12 w-12 border-[1px] border-slate-600 rounded-full grad"
+                class="shadow-[6px_6px_#1b1b1b,-4px_-3px_#7a2408] border-4 -skew-y-[4deg] m-auto h-16 w-16 border-white rounded-full bg-slate-500"
               ></div>
             </button>
           </span>
-          <span class="flex flex-col justify-end">
+          <span class="flex gap-1 flex-col justify-end">
             <p>MUTE</p>
             <button id="mute" type="button" title="mute">
               <div
-                class="shadow-[3px_3px_10px_2px_#800600,-3px_-3px_8px_2px_#c11a00] border-t-2 border-l-4 -skew-y-[4deg] m-auto h-12 w-12 border-[1px] border-slate-600 rounded-full grad"
+                class="shadow-[6px_6px_#1b1b1b,-4px_-3px_#7a2408] border-4 -skew-y-[4deg] m-auto h-16 w-16 border-white rounded-full bg-slate-500"
               ></div>
             </button>
           </span>
         </nav>
       </header>
       <main>
-        <section class="my-48 flex justify-around">
+        <section class="my-40 flex justify-around">
           <div class="flex flex-col justify-evenly">
             <div>
               <h1
-                class="font-games text-center text-6xl px-10 py-3 m-auto tracking-tight border-white2 border-2 rounded-full"
+                class="font-games text-center text-8xl px-10 py-3 m-auto tracking-normal border-white border-4 rounded-full"
               >
                 AFTHAB
               </h1>
             </div>
-            <h2 class="font-uniSans text-3xl tracking-[0.3rem]">
+            <h2 class="font-uniSans text-center text-5xl tracking-[0.3rem]">
               WEB DEVELOPER
             </h2>
           </div>
           <div
-            class="shadow-[5px_10px_15px_0px_#820000] border-8 z-0 border-b-[45px] border-[#cdcdcd] -rotate-12"
+            class="shadow-[5px_10px_#820000] border-8 z-0 border-b-[45px] border-slate-200 -rotate-2"
           >
             <div
-              class="w-1/2 h-10 shadow-2xl shadow-slate-900 -translate-y-6 bg-gradient-to-br from-cyan-500 to-cyan-800 to-80% left-0 right-0 m-auto z-10 absolute border-r-[2px] border-cyan-950"
+              class="w-1/2 h-10 shadow-2xl shadow-slate-900 -translate-y-6 bg-slate-400 left-0 right-0 m-auto z-10 absolute border-r-[2px] border-slate-950"
             ></div>
             <img
               alt="profile"
               src="./img/profile.jpg"
-              height="220px"
-              width="220px"
+              height="240px"
+              width="240px"
             />
           </div>
         </section>
         <section class="my-20">
-          <h3 class="font-uniSans tracking-widest my-4 text-3xl text-center">
+          <h3 class="font-uniSans tracking-widest my-4 text-9xl text-center">
             PROFICIENCIES
+            <!-- SERVICES -->
           </h3>
-          <div class="columns-2 gap-x-20 text-xl py-4">
+          <div class="columns-2 gap-x-20 text-xl font-bold py-4">
             <div class="my-32 text-right">
-              <h4 class="font-grandezza text-2xl">BACK-END DEVELOPMENT</h4>
+              <h4 class="font-grandezza text-4xl">BACK-END DEVELOPMENT</h4>
               <p class="font-semibold">
-                using Express.js and MongoDB (Mongoose, Prisma)
+                API Integration and Database Management
               </p>
             </div>
             <div class="my-32 text-right">
-              <h4 class="font-grandezza text-2xl">RESPONSIVE WEB DESIGN</h4>
+              <h4 class="font-grandezza text-4xl">
+                RES<span class="font-light">PON</span>SIV<span class="font-thin"
+                  >E WE</span
+                >B D<span class="font-extralight">ESI</span>GN
+              </h4>
               <p class="font-semibold">for Mobiles, Tablets and Desktops</p>
             </div>
             <div class="my-32">
-              <h4 class="font-grandezza text-2xl">FRONT-END DEVELOPMENT</h4>
-              <p class="font-semibold">
-                with CSS (Bootstrap, TailwindCSS) and JS (VanillaTS, React)
-              </p>
+              <h4 class="font-grandezza text-4xl">FRONT-END DEVELOPMENT</h4>
+              <p class="font-semibold">Designing and Developing Websites</p>
             </div>
             <div class="my-32">
-              <h4 class="font-grandezza text-2xl">MIGRATION</h4>
+              <h4 class="font-grandezza text-4xl flex gap-1">
+                <span class="font-black">M</span>
+                <span class="font-extrabold">I</span>
+                <span class="font-bold">G</span>
+                <span class="font-semibold">R</span>
+                <span class="font-medium">A</span>
+                <span class="font-normal">T</span>
+                <span class="font-light">I</span>
+                <span class="font-extralight">O </span>
+                <span class="font-thin">N</span>
+              </h4>
               <p class="font-semibold">to newer releases or other frameworks</p>
             </div>
           </div>
         </section>
         <section class="relative z-10 w-full my-20">
-          <h3 class="font-uniSans tracking-widest my-2 text-3xl text-center">
+          <h3 class="font-uniSans tracking-widest my-2 text-9xl text-center">
             TECHNOLOGIES
           </h3>
           <div
-            id="listCircle"
-            class="spark h-16 w-32 rounded-b-full bg-[#cf3319] left-0 right-0 m-auto absolute z-0 flex justify-center items-center pb-8 p-4 text-2xl"
+            id="half_circle"
+            class="spark h-16 w-32 rounded-b-full bg-darkOrange left-0 right-0 m-auto absolute z-0 flex justify-center items-center pb-8 p-4 text-2xl"
           ></div>
           <div
             id="list_container"
-            class="spark bg-zinc-950 text-zinc-500 font-inter font-semibold rounded-3xl py-24 border-t-4 border-[#cf3319]"
+            class="spark bg-zinc-950 flex flex-col gap-14 text-zinc-500 font-inter font-semibold rounded-3xl py-24 border-t-4 border-darkOrange"
           >
             <ul
-              class="flex gap-16 justify-center items-center contrast-200 text-2xl"
+              class="flex gap-20 justify-center items-center contrast-200 text-[28px]"
             >
-              <li class="m-6 text-center">
+              <li class="text-center">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title></title>
+                  <path
+                    d="M11.5725 0c-.1763 0-.3098.0013-.3584.0067-.0516.0053-.2159.021-.3636.0328-3.4088.3073-6.6017 2.1463-8.624 4.9728C1.1004 6.584.3802 8.3666.1082 10.255c-.0962.659-.108.8537-.108 1.7474s.012 1.0884.108 1.7476c.652 4.506 3.8591 8.2919 8.2087 9.6945.7789.2511 1.6.4223 2.5337.5255.3636.04 1.9354.04 2.299 0 1.6117-.1783 2.9772-.577 4.3237-1.2643.2065-.1056.2464-.1337.2183-.1573-.0188-.0139-.8987-1.1938-1.9543-2.62l-1.919-2.592-2.4047-3.5583c-1.3231-1.9564-2.4117-3.556-2.4211-3.556-.0094-.0026-.0187 1.5787-.0235 3.509-.0067 3.3802-.0093 3.5162-.0516 3.596-.061.115-.108.1618-.2064.2134-.075.0374-.1408.0445-.495.0445h-.406l-.1078-.068a.4383.4383 0 01-.1572-.1712l-.0493-.1056.0053-4.703.0067-4.7054.0726-.0915c.0376-.0493.1174-.1125.1736-.143.0962-.047.1338-.0517.5396-.0517.4787 0 .5584.0187.6827.1547.0353.0377 1.3373 1.9987 2.895 4.3608a10760.433 10760.433 0 004.7344 7.1706l1.9002 2.8782.096-.0633c.8518-.5536 1.7525-1.3418 2.4657-2.1627 1.5179-1.7429 2.4963-3.868 2.8247-6.134.0961-.6591.1078-.854.1078-1.7475 0-.8937-.012-1.0884-.1078-1.7476-.6522-4.506-3.8592-8.2919-8.2087-9.6945-.7672-.2487-1.5836-.42-2.4985-.5232-.169-.0176-1.0835-.0366-1.6123-.037zm4.0685 7.217c.3473 0 .4082.0053.4857.047.1127.0562.204.1642.237.2767.0186.061.0234 1.3653.0186 4.3044l-.0067 4.2175-.7436-1.14-.7461-1.14v-3.066c0-1.982.0093-3.0963.0234-3.1502.0375-.1313.1196-.2346.2323-.2955.0961-.0494.1313-.054.4997-.054z"
+                  ></path></svg
+                >Next.js
+              </li>
+              <li class="text-center">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -142,7 +172,27 @@
                   ></path></svg
                 >React.js
               </li>
-              <li class="m-6 text-center">
+              <li class="text-center">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"
+                  ></path></svg
+                >TypeScript
+              </li>
+            </ul>
+            <ul
+              class="flex gap-16 justify-center items-center contrast-200 text-2xl"
+            >
+              <li class="text-center">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -158,27 +208,7 @@
                   ></path></svg
                 >Express.js
               </li>
-              <li class="m-6 text-center">
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"
-                  ></path></svg
-                >MongoDB
-              </li>
-            </ul>
-            <ul
-              class="flex gap-28 justify-center items-center contrast-200 text-2xl"
-            >
-              <li class="m-6 text-center">
+              <li class="text-center">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -194,7 +224,7 @@
                   ></path></svg
                 >Node.js
               </li>
-              <li class="m-6 text-center">
+              <li class="text-center">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -206,11 +236,12 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"
+                    d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"
                   ></path></svg
-                >JavaScript
+                >MongoDB
               </li>
-              <li class="m-6 text-center">
+
+              <li class="text-center">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -227,11 +258,10 @@
                 >Tailwind CSS
               </li>
             </ul>
-            <!-- <li class="m-6 text-center">TypeScript</li> -->
             <ul
-              class="flex gap-16 justify-center items-center contrast-200 text-lg"
+              class="flex gap-14 justify-center items-center contrast-200 text-lg"
             >
-              <li class="m-4 text-center">
+              <li class="text-center">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -247,7 +277,7 @@
                   ></path></svg
                 >AXIOS
               </li>
-              <li class="m-4 text-center">
+              <li class="text-center">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -263,7 +293,7 @@
                   ></path></svg
                 >React Query
               </li>
-              <li class="m-4 text-center">
+              <li class="text-center">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -279,7 +309,24 @@
                   ></path></svg
                 >React Router
               </li>
-              <li class="m-4 text-center">
+              <li class="text-center">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title></title>
+                  <path
+                    d="M21.8068 18.2848L13.5528.7565c-.207-.4382-.639-.7273-1.1286-.7541-.5023-.0293-.9523.213-1.2062.6253L2.266 15.1271c-.2773.4518-.2718 1.0091.0158 1.4555l4.3759 6.7786c.2608.4046.7127.6388 1.1823.6388.1332 0 .267-.0188.3987-.0577l12.7019-3.7568c.3891-.1151.7072-.3904.8737-.7553s.1633-.7828-.0075-1.1454zm-1.8481.7519L9.1814 22.2242c-.3292.0975-.6448-.1873-.5756-.5194l3.8501-18.4386c.072-.3448.5486-.3996.699-.0803l7.1288 15.138c.1344.2856-.019.6224-.325.7128z"
+                  ></path></svg
+                >Prisma
+              </li>
+              <li class="text-center">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -295,7 +342,7 @@
                   ></path></svg
                 >JWT
               </li>
-              <li class="m-4 text-center">
+              <li class="text-center">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -315,25 +362,25 @@
           </div>
         </section>
         <section class="my-20">
-          <h3 class="font-uniSans tracking-widest my-1 text-3xl text-center">
+          <h3 class="font-uniSans tracking-widest my-1 text-9xl text-center">
             PROJECTS
           </h3>
 
           <div
-            class="px-8 py-4 text-orange-100 bg-gradient-to-r from-transparent from-90% to-red-600 shadow-[inset_-7px_-7px_3px_#a82a00,inset_2px_2px_2px_#a32900]"
+            class="px-8 py-4 text-xl text-orange-100 shadow-[inset_-7px_-7px_#a82a00,inset_2px_2px_#a32900]"
           >
-            <div class="my-2">
+            <div class="my-6">
               <h4
-                class="font-spectral font-bold flex items-center text-3xl my-2 gap-2"
+                class="font-spectral font-bold flex items-center text-5xl my-2 gap-2"
               >
                 Kollege
 
                 <a
                   target="_blank"
                   rel="noopener"
-                  class="text-2xl drop-shadow-[1.5px_1.5px_1px_#ff5900]"
+                  class="text-4xl drop-shadow-[1.5px_1.5px_#a32900]"
                   title="Kollege"
-                  href="https://github.com/iafthab/5.6-Kollege#readme"
+                  href="https://github.com/iafthab/kollege#readme"
                 >
                   <svg
                     stroke="currentColor"
@@ -350,7 +397,7 @@
                   </svg>
                 </a>
               </h4>
-              <p class="font-semibold text-xl">
+              <p class="font-semibold">
                 A College based Data Management System.<br /><strong
                   >Features:</strong
                 >
@@ -358,19 +405,19 @@
               </p>
             </div>
             <hr class="border-b-2 border-orange-100" />
-            <div class="my-2">
+            <div class="my-6">
               <div class="flex items-center gap-2">
                 <h4
-                  class="font-games border-2 rounded-3xl border-orange-100 px-3 text-2xl my-2"
+                  class="font-games border-2 rounded-full border-orange-100 px-5 py-2 text-4xl my-2"
                 >
                   Ketty
                 </h4>
                 <a
                   target="_blank"
                   rel="noopener"
-                  class="text-2xl drop-shadow-[1.5px_1.5px_1px_#ff5900]"
+                  class="text-4xl drop-shadow-[1.5px_1.5px_#a32900]"
                   title="Ketty"
-                  href="https://github.com/iafthab/6.4-Ketty/#readme"
+                  href="https://github.com/iafthab/ketty#readme"
                 >
                   <svg
                     stroke="currentColor"
@@ -388,7 +435,7 @@
                 </a>
               </div>
 
-              <p class="font-semibold text-xl">
+              <p class="font-semibold">
                 Portfolio Website inspired by Telefunken Ketty (This One)
               </p>
             </div>
@@ -400,15 +447,13 @@
        </section> -->
       </main>
       <footer class="flex justify-around mb-20 mt-40 text-orange-300">
-        <form
-          class="flex justify-between font-semibold flex-col drop-shadow-[2px_2px_1.5px_#ff6a00]"
-        >
-          <div>
-            <p class="text-3xl">
+        <section class="my-auto font-semibold drop-shadow-[2px_2px_#ff6a00]">
+          <div class="flex flex-col gap-4">
+            <p class="text-5xl">
               Like what you see?<br />
               Start a conversation.
             </p>
-            <div class="text-5xl gap-6 flex items-center">
+            <div class="text-6xl gap-6 flex items-center">
               <a
                 target="_blank"
                 rel="noopener"
@@ -436,7 +481,7 @@
                 target="_blank"
                 rel="noopener"
                 title="LinkedIn"
-                href="https://www.linkedin.com/in/afthab-iqbal-k-320718275"
+                href="https://www.linkedin.com/in/iafthab/"
               >
                 <svg
                   stroke="currentColor"
@@ -455,7 +500,7 @@
               <a
                 target="_blank"
                 rel="noopener"
-                class="text-4xl"
+                class="text-5xl"
                 title="Indeed"
                 href="https://profile.indeed.com/p/afthabi-vfh9kfk"
               >
@@ -496,80 +541,45 @@
               </a>
             </div>
           </div>
-          <div class="text-2xl text-orange-400">
-            <p class="flex gap-3 items-center">
-              Powered by
-              <span title="Tailwind CSS"
-                ><svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"
-                  ></path></svg
-              ></span>
-              <span title="TypeScript"
-                ><svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"
-                  ></path></svg
-              ></span>
-            </p>
-          </div>
-        </form>
+        </section>
         <section class="flex gap-2 flex-col items-center justify-center">
           <div class="flex circleDesign gap-2">
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
           </div>
           <div class="flex circleDesign gap-2">
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
           </div>
           <div class="flex circleDesign gap-2">
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
           </div>
           <div class="flex circleDesign gap-2">
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
           </div>
           <div class="flex circleDesign gap-2">
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
-            <div class="w-8 h-8 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
           </div>
         </section>
       </footer>

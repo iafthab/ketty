@@ -4,8 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        blackTeal: "#061d1b",
-        white2: "#fdfbfd",
+        greyish: "#464545",
+        darkGrey: "#2f2f2f",
+        blackTeal: "#1b1b1b",
+        lightOrange: "#ff7518",
+        darkOrange: "#f54703",
+        white: "#fdfbfd",
       },
       keyframes: {
         spark: {

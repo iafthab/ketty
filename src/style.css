@@ -30,11 +30,11 @@ body {
 }
 
 .circleDesign div {
-  box-shadow: inset -5px -5px #7a2408;
-  border-bottom: 1.5px solid #ff7518;
-  border-right: 1.5px solid #ff7518;
-  border-top: 0.5px solid #ff7518;
-  border-left: 0.5px solid #ff7518;
+  box-shadow: inset -6px -6px #751d00;
+  border-bottom: 2px solid #ff7518;
+  border-right: 2px solid #ff7518;
+  border-top: 1px solid #ff7518;
+  border-left: 1px solid #ff7518;
 }
 
 /* Technologies Container */
@@ -55,7 +55,7 @@ body {
   0%,
   40%,
   75% {
-    box-shadow: 0px 6px #ffab5d00;
+    box-shadow: 0px 2px #71717a;
   }
 }
 .animate-sparkOut {
@@ -67,13 +67,13 @@ body {
   50%,
   100% {
     color: #ffab5d;
-    box-shadow: inset -3px -3px 1px 4.5px #ffab5d;
+    box-shadow: inset -3px -3px 1px 4px #ffab5d;
   }
   0%,
   40%,
   75% {
     color: #71717a;
-    box-shadow: none;
+    box-shadow: inset -1.5px -1.5px 0px 2px #71717a;
   }
 }
 

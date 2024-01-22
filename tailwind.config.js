@@ -1,3 +1,5 @@
+import { transform } from "typescript";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -12,28 +14,44 @@ export default {
         white: "#fdfbfd",
       },
       keyframes: {
-        spark: {
-          "25%,50%, 100%": {
-            color: "#dd9551",
-            boxShadow: "inset -2px -2px 10px 2px #dd9551",
+        // spark: {
+        //   "25%,50%, 100%": {
+        //     color: "#dd9551",
+        //     boxShadow: "inset -2px -2px 10px 2px #dd9551",
+        //   },
+        //   "0%, 40%, 75%": {
+        //     color: "#71717a",
+        //     boxShadow: "none",
+        //   },
+        // },
+        // sparkOut: {
+        //   "25%,50%, 100%": {
+        //     boxShadow: "0px 4px 1px 0px #dd955160",
+        //   },
+        //   "0%, 40%, 75%": {
+        //     boxShadow: "0px 4px 1px 0px #dd955100",
+        //   },
+        // },
+        breezy: {
+          "0%": {
+            boxShadow: "2px 7px #820000",
+            borderBottomWidth: "45px",
           },
-          "0%, 40%, 75%": {
-            color: "#71717a",
-            boxShadow: "none",
+          "30%": {
+            boxShadow: "4px 12px 2px 2px #820000",
+            borderBottomWidth: "42px",
           },
-        },
-        sparkOut: {
-          "25%,50%, 100%": {
-            boxShadow: "0px 4px 1px 0px #dd955160",
-          },
-          "0%, 40%, 75%": {
-            boxShadow: "0px 4px 1px 0px #dd955100",
+
+          "100%": {
+            boxShadow: "3px 10px 1px 1px #820000",
+            borderBottomWidth: "43.5px",
           },
         },
       },
       animation: {
         spark: "spark 2s step-end forwards",
         sparkOut: "sparkOut 2s step-end forwards",
+        breezy: "breezy 5s infinite alternate",
       },
     },
     fontFamily: {

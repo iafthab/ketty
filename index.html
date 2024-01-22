@@ -8,7 +8,7 @@
     <title>Afthab</title>
     <script src="/main.js" type="module" defer></script>
   </head>
-  <body class="w-full bg-[#4faaab] text-white">
+  <body class="w-full bg-cyan-300 text-white">
     <div
       class="mx-10 mt-12 mb-32 border-4 border-white px-10 pt-20 lg:px-40 rounded-[70px] bg-darkOrange"
     >
@@ -26,7 +26,7 @@
           <p>TUNE</p>
           <button id="tune" type="button" title="tune">
             <div
-              class="shadow-[10px_10px_#1b1b1b,-7px_-6px_#7a2408] border-8 -skew-y-[4deg] m-auto h-28 w-28 border-white rounded-full bg-slate-500"
+              class="shadow-[10px_10px_#351214] border-8 m-auto h-28 w-28 border-white rounded-full bg-slate-500"
             ></div>
           </button>
         </span>
@@ -35,7 +35,7 @@
             <p>VOL&nbsp;<span class="text-[1.75rem]">+</span></p>
             <button id="volUp" type="button" title="volume +">
               <div
-                class="shadow-[6px_6px_#1b1b1b,-4px_-3px_#7a2408] border-4 -skew-y-[4deg] m-auto h-16 w-16 border-white rounded-full bg-slate-500"
+                class="shadow-[6px_6px_#351214] border-4 m-auto h-16 w-16 border-white rounded-full bg-slate-500"
               ></div>
             </button>
           </span>
@@ -43,7 +43,7 @@
             <p>VOL&nbsp;<span class="text-[1.75rem]">-</span></p>
             <button id="volDown" type="button" title="volume -">
               <div
-                class="shadow-[6px_6px_#1b1b1b,-4px_-3px_#7a2408] border-4 -skew-y-[4deg] m-auto h-16 w-16 border-white rounded-full bg-slate-500"
+                class="shadow-[6px_6px_#351214] border-4 m-auto h-16 w-16 border-white rounded-full bg-slate-500"
               ></div>
             </button>
           </span>
@@ -51,44 +51,46 @@
             <p>MUTE</p>
             <button id="mute" type="button" title="mute">
               <div
-                class="shadow-[6px_6px_#1b1b1b,-4px_-3px_#7a2408] border-4 -skew-y-[4deg] m-auto h-16 w-16 border-white rounded-full bg-slate-500"
+                class="shadow-[6px_6px_#351214] border-4 m-auto h-16 w-16 border-white rounded-full bg-slate-500"
               ></div>
             </button>
           </span>
         </nav>
       </header>
       <main>
-        <section class="my-40 flex justify-around">
-          <div class="flex flex-col justify-evenly">
-            <div>
-              <h1
-                class="font-games text-center text-8xl px-10 py-3 m-auto tracking-normal border-white border-4 rounded-full"
-              >
-                AFTHAB
-              </h1>
-            </div>
+        <section
+          class="my-32 h-[40vh] w-full flex justify-center relative items-center"
+        >
+          <div class="flex flex-col items-center gap-6">
+            <h1
+              class="font-games text-center text-8xl px-10 py-3 m-auto tracking-normal border-white border-4 rounded-full"
+            >
+              AFTHAB
+            </h1>
             <h2 class="font-uniSans text-center text-5xl tracking-[0.3rem]">
               WEB DEVELOPER
             </h2>
           </div>
-          <div
-            class="shadow-[5px_10px_#820000] border-8 z-0 border-b-[45px] border-slate-200 -rotate-2"
-          >
+          <div class="relative w-1/2 h-full">
             <div
-              class="w-1/2 h-10 shadow-2xl shadow-slate-900 -translate-y-6 bg-slate-400 left-0 right-0 m-auto z-10 absolute border-r-[2px] border-slate-950"
-            ></div>
-            <img
-              alt="profile"
-              src="./img/profile.jpg"
-              height="240px"
-              width="240px"
-            />
+              class="animate-breezy w-fit h-fit absolute right-0 top-0 border-8 z-0 border-b-[45px] border-slate-200 -rotate-6"
+            >
+              <div
+                class="w-1/2 h-11 shadow-2xl shadow-slate-900 -translate-y-6 bg-white/40 left-0 right-0 m-auto z-10 absolute border-r-[1.5px] border-slate-950"
+              ></div>
+              <img
+                alt="profile"
+                src="./img/profileNew.jpg"
+                height="240px"
+                width="240px"
+              />
+            </div>
           </div>
         </section>
         <section class="my-20">
           <h3 class="font-uniSans tracking-widest my-4 text-9xl text-center">
-            PROFICIENCIES
-            <!-- SERVICES -->
+            <!-- PROFICIENCIES -->
+            SERVICES
           </h3>
           <div class="columns-2 gap-x-20 text-xl font-bold py-4">
             <div class="my-32 text-right">
@@ -135,7 +137,7 @@
           ></div>
           <div
             id="list_container"
-            class="spark bg-zinc-950 flex flex-col gap-14 text-zinc-500 font-inter font-semibold rounded-3xl py-24 border-t-4 border-darkOrange"
+            class="spark bg-zinc-950 flex flex-col gap-14 text-zinc-500 font-inter font-bold rounded-3xl py-24 border-t-4 cursor-default border-darkOrange"
           >
             <ul
               class="flex gap-20 justify-center items-center contrast-200 text-[28px]"
@@ -367,7 +369,7 @@
           </h3>
 
           <div
-            class="px-8 py-4 text-xl text-orange-100 shadow-[inset_-7px_-7px_#a82a00,inset_2px_2px_#a32900]"
+            class="px-8 py-4 text-xl text-orange-50 shadow-[inset_-7px_-7px_#751d00,inset_2px_2px_#751d00]"
           >
             <div class="my-6">
               <h4
@@ -383,6 +385,7 @@
                   href="https://github.com/iafthab/kollege#readme"
                 >
                   <svg
+                    class="duration-300 hover:-skew-x-3 hover:scale-125 hover:text-black"
                     stroke="currentColor"
                     fill="currentColor"
                     stroke-width="0"
@@ -397,7 +400,7 @@
                   </svg>
                 </a>
               </h4>
-              <p class="font-semibold">
+              <p class="font-semibold cursor-default">
                 A College based Data Management System.<br /><strong
                   >Features:</strong
                 >
@@ -420,6 +423,7 @@
                   href="https://github.com/iafthab/ketty#readme"
                 >
                   <svg
+                    class="duration-300 hover:-skew-x-3 hover:scale-125 hover:text-black"
                     stroke="currentColor"
                     fill="currentColor"
                     stroke-width="0"
@@ -435,7 +439,7 @@
                 </a>
               </div>
 
-              <p class="font-semibold">
+              <p class="font-semibold cursor-default">
                 Portfolio Website inspired by Telefunken Ketty (This One)
               </p>
             </div>
@@ -446,10 +450,10 @@
         <ul><li>Life:22 years</li></ul>
        </section> -->
       </main>
-      <footer class="flex justify-around mb-20 mt-40 text-orange-300">
-        <section class="my-auto font-semibold drop-shadow-[2px_2px_#ff6a00]">
+      <footer class="flex justify-around mb-20 mt-40 text-orange-200">
+        <section class="my-auto font-semibold">
           <div class="flex flex-col gap-4">
-            <p class="text-5xl">
+            <p class="text-5xl cursor-default">
               Like what you see?<br />
               Start a conversation.
             </p>
@@ -457,10 +461,11 @@
               <a
                 target="_blank"
                 rel="noopener"
-                title="Mail"
+                title="Mail Me"
                 href="mailto:afthabiqbal123@gmail.com"
               >
                 <svg
+                  class="duration-300 hover:text-white hover:drop-shadow-[2px_2px_#b91c1c] hover:-skew-x-3 hover:scale-110"
                   stroke="currentColor"
                   fill="none"
                   stroke-width="2"
@@ -480,10 +485,11 @@
               <a
                 target="_blank"
                 rel="noopener"
-                title="LinkedIn"
+                title="Message Me"
                 href="https://www.linkedin.com/in/iafthab/"
               >
                 <svg
+                  class="duration-300 hover:text-blue-600 hover:-skew-x-3 hover:drop-shadow-[2px_2px_#eff6ff] hover:scale-110"
                   stroke="currentColor"
                   fill="currentColor"
                   stroke-width="0"
@@ -501,10 +507,11 @@
                 target="_blank"
                 rel="noopener"
                 class="text-5xl"
-                title="Indeed"
+                title="Uhm.. Idk"
                 href="https://profile.indeed.com/p/afthabi-vfh9kfk"
               >
                 <svg
+                  class="duration-300 hover:text-blue-900 hover:-skew-x-3 hover:drop-shadow-[2px_2px_#eff6ff] hover:scale-110"
                   stroke="currentColor"
                   fill="currentColor"
                   stroke-width="0"
@@ -522,10 +529,11 @@
               <a
                 target="_blank"
                 rel="noopener"
-                title="GitHub"
+                title="Open a Pull Request ;)"
                 href="https://github.com/iafthab"
               >
                 <svg
+                  class="duration-300 hover:text-black hover:drop-shadow-[2px_2px_#f8fafc] hover:-skew-x-3 hover:scale-110"
                   stroke="currentColor"
                   fill="currentColor"
                   stroke-width="0"
@@ -544,42 +552,42 @@
         </section>
         <section class="flex gap-2 flex-col items-center justify-center">
           <div class="flex circleDesign gap-2">
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
           </div>
           <div class="flex circleDesign gap-2">
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
           </div>
           <div class="flex circleDesign gap-2">
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
           </div>
           <div class="flex circleDesign gap-2">
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
           </div>
           <div class="flex circleDesign gap-2">
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
-            <div class="w-12 h-12 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
+            <div class="w-14 h-14 rounded-full bg-blackTeal"></div>
           </div>
         </section>
       </footer>

@@ -4,7 +4,7 @@
   "description": "portfolio website",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "tailwind": "tailwindcss -i ./src/style.css -o ./public/style.css --watch",

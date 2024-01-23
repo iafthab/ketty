@@ -15,31 +15,27 @@ const halfCircle = document.getElementById("half_circle") as HTMLDivElement;
 const container = document.getElementById("list_container") as HTMLDivElement;
 observer.observe(container);
 
-// player
+//? player
 const player = document.getElementById("player") as HTMLAudioElement;
 player.volume = 0.3;
 
 // controls
 const volUp = document.getElementById("volUp");
 volUp?.addEventListener("click", () => {
-  if (player.volume < 0.9) player.volume = player.volume + 0.1;
-  console.log("volup clicked");
+  if (player.volume < 0.9) player.volume = player.volume + 0.2;
 });
 
 const volDown = document.getElementById("volDown");
 volDown?.addEventListener("click", () => {
-  if (player.volume > 0.2) player.volume = player.volume - 0.1;
-  console.log("voldown clicked");
+  if (player.volume > 0.2) player.volume = player.volume - 0.2;
 });
 
 const mute = document.getElementById("mute");
 mute?.addEventListener("click", () => {
   player.muted = player.muted ? false : true;
-  console.log("mute clicked");
 });
 
 const tune = document.getElementById("tune");
 tune?.addEventListener("click", () => {
   player.muted = false;
-  console.log("clicked");
 });

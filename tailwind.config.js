@@ -47,11 +47,27 @@ export default {
             borderBottomWidth: "43.5px",
           },
         },
+        breezySM: {
+          "0%": {
+            boxShadow: "2px 3px #820000",
+            borderBottomWidth: "24px",
+          },
+          "30%": {
+            boxShadow: "3px 5px 2px 1px #820000",
+            borderBottomWidth: "23.5px",
+          },
+
+          "100%": {
+            boxShadow: "2px 4px 1px 1px #820000",
+            borderBottomWidth: "23px",
+          },
+        },
       },
       animation: {
         spark: "spark 2s step-end forwards",
         sparkOut: "sparkOut 2s step-end forwards",
-        breezy: "breezy 5s infinite alternate",
+        breezy: "breezy 3s infinite alternate",
+        breezySM: "breezySM 5s infinite alternate",
       },
     },
     fontFamily: {
